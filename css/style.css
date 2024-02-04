@@ -1,0 +1,21 @@
+@import url(./vendor/reset.css);
+@import url(./custom/variables.css);
+@import url(./custom/font.css);
+@import url(./custom/common.css);
+@import url(./custom/blocks/button.css);
+@import url(./custom/blocks/dropdown.css);
+@import url(./custom/blocks/popup.css);
+@import url(./custom/blocks/breadcrumbs.css);
+@import url(./custom/blocks/pagination.css);
+@import url(./custom/blocks/card.css);
+@import url(./custom/header.css);
+
+
+a{
+    color: var(--color-main);
+    text-decoration: none;
+}
+
+.nav__link--activ{
+    color: var(--color-accent);
+}

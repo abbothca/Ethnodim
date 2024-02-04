@@ -1,0 +1,26 @@
+.breadcrumbs__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.breadcrumbs__item{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.breadcrumbs__item::after{
+    content: "";
+    display: block;
+    width: 25px;
+    height: 1px;
+    background-color: var(--color-main);
+}
+
+.breadcrumbs__item:last-of-type::after{
+    display: none;
+}

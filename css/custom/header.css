@@ -1,0 +1,21 @@
+.header{
+    width: 100%;
+}
+
+.header__wrap{
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__list,
+.settings,
+.settings__item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* gap: */
+}
+
