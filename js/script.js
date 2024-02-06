@@ -18,52 +18,28 @@ let overlay = document.getElementById('burger-menu');
 // }
 
 burgerMenu.addEventListener("click", function () {
-    overlay.classList.add("open");
+    burgerMenu.classList.add("open");
 })
 
 
-let popup = document.getElementById("popup");
+let popup = document.getElementsByClassName("popup");
 
 // open popup
 
-let menuLink = document.getElementsByClassName("nav__item");
-if (popup && menuLink.length) {
-    for (let link of menuLink) {
-        link.addEventListener("click", function () {
-            popup.classList.add("popup--open")
-        })
-    }
-};
-
-document.addEventListener("click", function (evt) {
-    let targetEl = evt.target;     
-    do {
-        for (let link of menuLink) {
-            if( targetEl == link) {
-                link.addEventListener("click", function () {
-                    popup.classList.add("popup--open")
-                });
-                return;
-            }            
-        }
-        if (targetEl == popup) {
-            return;
-        };
-        if (targetEl != document) {
-            targetEl = targetEl.parentNode;
-            console.log(targetEl);
-        } else {
-            popup.classList.remove("popup--open");
-            return;
-        }
-    } while (targetEl);
-});
+// let menuLink = document.getElementsByClassName("nav__item");
+// if (popup && menuLink.length) {
+//     for (let link of menuLink) {
+//         link.addEventListener("click", function () {
+//             popup.classList.add("popup--open")
+//         })
+//     }
+// };
 
 
 // popup
 let submenuItem = document.getElementsByClassName("p-menu__item");
 
-if (popup && submenuItem.length) {
+if (popup.length && submenuItem.length) {
     for (let link of submenuItem) {
         link.addEventListener("click", function () {
             let previousLink = document.getElementsByClassName("p-menu__item--active");
