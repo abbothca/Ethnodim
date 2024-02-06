@@ -1,0 +1,40 @@
+.burger-menu{
+    appearance: none;
+    display: none;
+    position: relative;
+    width: 24px;
+    height: 8px;
+    padding: 3px;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+.burger-menu__item{
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 1px;
+    background-color: var(--color-main);
+}
+
+.burger-menu__item:nth-child(1){
+    top: 0px;
+}
+
+.burger-menu__item:nth-child(2){
+    top: 4px;
+}
+
+.burger-menu__item:nth-child(3){
+    width: 10px;
+    top: 9px;
+}
+
+@media screen and (max-width: 1024px) {
+    .burger-menu{
+        display: block;
+    }
+}

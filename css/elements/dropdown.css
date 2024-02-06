@@ -15,6 +15,16 @@
     align-items: center;
     gap: 5px;
     padding: 10px 7px;
+
+    font: var(--font-16-r);
+}
+
+.dropdown__icon{
+    height: 16px;
+}
+
+.dropdown__icon--big{
+    height: 22px;
 }
 
 .dropdown__arrow{
@@ -43,7 +53,6 @@
 }
 
 .dropdown:hover .dropdown__list{
-    /* display: flex; */
     max-height: 300px;
 
     border: 1px solid var(--color-text);
@@ -67,7 +76,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    width: calc(100% - 7px);
+    width: 100%;
     max-height: 0px;
     overflow: hidden;
     display: flex;
@@ -86,6 +95,9 @@
     display: block;
     padding: 10px 10px;
     text-align: center;
+    text-transform: uppercase;
+
+    font: var(--font-16-r);
 }
 
 .dropdown__link:hover{

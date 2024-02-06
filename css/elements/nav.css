@@ -1,0 +1,33 @@
+.nav {
+  padding-right: 22px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav__list {
+  gap: 32px;
+}
+
+.nav__link {
+  font: var(--font-16-r);
+  transition: color 0.3s ease-in-out;
+}
+
+.nav__link--activ {
+  color: var(--color-accent);
+  font: var(--font-16-b);
+}
+
+.nav__link:hover {
+    color: var(--color-accent);
+}
+
+@media screen and (max-width: 1024px) {
+  .nav{
+      display: none;
+  }
+}

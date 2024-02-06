@@ -1,21 +1,25 @@
-@import url(./vendor/reset.css);
 @import url(./custom/variables.css);
 @import url(./custom/font.css);
 @import url(./custom/common.css);
-@import url(./custom/blocks/button.css);
-@import url(./custom/blocks/dropdown.css);
-@import url(./custom/blocks/popup.css);
-@import url(./custom/blocks/breadcrumbs.css);
-@import url(./custom/blocks/pagination.css);
-@import url(./custom/blocks/card.css);
-@import url(./custom/header.css);
+@import url(./elements/button.css);
+@import url(./elements/dropdown.css);
+@import url(./elements/popup.css);
+@import url(./elements/breadcrumbs.css);
+@import url(./elements/pagination.css);
+@import url(./elements/card.css);
+@import url(./elements/logo.css);
+@import url(./elements/nav.css);
+@import url(./elements/settings.css);
+@import url(./elements/cart.css);
+@import url(./elements/burger.css);
+@import url(./components/header.css);
 
+
+*{
+    box-sizing: border-box;
+}
 
 a{
     color: var(--color-main);
     text-decoration: none;
-}
-
-.nav__link--activ{
-    color: var(--color-accent);
 }

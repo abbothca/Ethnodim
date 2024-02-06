@@ -1,0 +1,47 @@
+.settings,
+.settings__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.settings{
+    gap: 20px;
+}
+
+.settings__item{
+    gap: 10px;
+}
+
+.settings__link{
+    font: var(--font-16-r);
+    transition: color 0.3s ease-in-out;
+}
+
+.settings__link:hover {
+    color: var(--color-accent);
+}
+
+.settings__icon{
+    width: 25px;
+    height: 25px;
+}
+
+.settings__icon path{
+    transition: fill 0.3s ease-in-out;
+}
+
+.settings__icon:hover path {
+    fill: var(--color-accent);
+}
+
+@media screen and (max-width: 1024px) {
+    .settings__list{
+        display: none;
+    }
+
+    .settings__icon{
+        width: 21px;
+        height: 21px;
+    }
+  }

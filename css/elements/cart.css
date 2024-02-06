@@ -1,0 +1,39 @@
+.cart{
+    display: block;
+    position: relative;
+}
+
+.cart__icon{
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+.cart__amount{
+    display: inline-block;
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+    padding: 3px 5px 2px;
+    border-radius: 50%;
+    background-color: var(--color-accent);
+    font: var(--font-svg);
+    color: var(--color-background);
+    pointer-events: none;
+}
+
+
+.cart__icon path{
+    transition: fill 0.3s ease-in-out;
+}
+
+.cart__icon:hover path {
+    stroke: var(--color-accent);
+}
+
+@media screen and (max-width: 768px) {
+    .cart__icon{
+        width: 21px;
+        height: 21px;
+    }
+  }
